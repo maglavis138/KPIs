@@ -1,0 +1,9 @@
+{
+    "path" : "~/KPIs",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
