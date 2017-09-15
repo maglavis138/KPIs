@@ -451,6 +451,7 @@ ui <- dashboardPage(skin = "blue",
                                                column(3, numericInput("model_num_memes_reposts", label = "Memes Reposts", value = 100)),
                                                column(3, numericInput("model_num_simulations", label = "Number of Simulations", value = 10000)),
                                                column(3, actionButton(inputId = "model_simulation_button", label = "Simulate", width = "100%", style = "height:60px"))
+                                               
                                            ),
                                            
                                            box(title = "Content Distributions", status = "primary", solidHeader = TRUE, collapsible = TRUE, width = 12,
@@ -3856,7 +3857,7 @@ server <- function(input, output, session){
         
       }
       
-      plot_histogram(monte_carlo_videos, x_var = "Reach", title = "Reposts", title = "Reposts")
+      plot_histogram(monte_carlo_videos, x_var = "Reach", title = "Reposts")
       
     })
     
@@ -4001,7 +4002,7 @@ server <- function(input, output, session){
         
       }
       
-      plot_histogram(monte_carlo_video_memes, x_var = "Reach")
+      plot_histogram(monte_carlo_video_memes, x_var = "Reach", title = "Reposts")
       
     })
     
